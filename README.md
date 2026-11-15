@@ -2,6 +2,8 @@
 
 I build small, simple mobile apps (PWAs) for my own everyday life. No login, no server – your data stays on the phone and the backup is locked with a password. Every app is available in English and Swedish.
 
+**Why it is safer:** there is no server and no database – nothing central for hackers to steal and nothing to sell. Your finances, health and family data never leave your phone.
+
 **All apps: [flyinggooner.github.io](https://flyinggooner.github.io/)**
 
 | App | What it does |
