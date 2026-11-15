@@ -1,12 +1,12 @@
-## Hej 👋
+## Hi 👋
 
-Jag bygger små, enkla mobilappar (PWA) för mitt eget vardagsliv. Ingen inloggning, ingen server – din data stannar i telefonen och backupen är låst med lösenord.
+I build small, simple mobile apps (PWAs) for my own everyday life. No login, no server – your data stays on the phone and the backup is locked with a password. Every app is available in English and Swedish.
 
-**Alla appar: [flyinggooner.github.io](https://flyinggooner.github.io/)**
+**All apps: [flyinggooner.github.io](https://flyinggooner.github.io/)**
 
-| App | Vad den gör |
+| App | What it does |
 |---|---|
-| [Stress kontroll](https://flyinggooner.github.io/Stress-control/) | Skriv ner det som snurrar – och släpp det. |
-| [Simple nutrition](https://flyinggooner.github.io/simple-nutrition/) | Vanor först – kalorier som stöd när du vill. |
-| [Budget buddy](https://flyinggooner.github.io/budget-buddy/) | Planera ekonomin månad för månad. |
-| [Football, not soccer](https://flyinggooner.github.io/Football-not-soccer/) | Tabellen, matcherna och ditt lag. |
+| [Stress control](https://flyinggooner.github.io/Stress-control/) | Write down what is spinning in your head – and let it go. |
+| [Simple nutrition](https://flyinggooner.github.io/simple-nutrition/) | Habits first – calories as support when you want. |
+| [Budget buddy](https://flyinggooner.github.io/budget-buddy/) | Plan your finances month by month, in your own currency. |
+| [Football, not soccer](https://flyinggooner.github.io/Football-not-soccer/) | The table, the matches and your team. |
