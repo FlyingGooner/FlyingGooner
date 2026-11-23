@@ -1,16 +1,14 @@
-## Hi there 👋
+## Hi 👋
 
-<!--
-**FlyingGooner/FlyingGooner** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build small, simple mobile apps (PWAs) for my own everyday life. No login, no server – your data stays on the phone and the backup is locked with a password. Every app is available in English and Swedish.
 
-Here are some ideas to get you started:
+**Why it is safer:** there is no server and no database – nothing central for hackers to steal and nothing to sell. Your finances, health and family data never leave your phone.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**All apps: [flyinggooner.github.io](https://flyinggooner.github.io/)**
+
+| App | What it does |
+|---|---|
+| [Task buddy](https://flyinggooner.github.io/Stress-control/) | Write down what is spinning in your head – and let it go. |
+| [Fitness buddy](https://flyinggooner.github.io/simple-nutrition/) | Habits first – calories as support when you want. |
+| [Budget buddy](https://flyinggooner.github.io/budget-buddy/) | Plan your finances month by month, in your own currency. |
+| [Football, not soccer](https://flyinggooner.github.io/Football-not-soccer/) | The table, the matches and your team. |
