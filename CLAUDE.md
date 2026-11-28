@@ -2,7 +2,7 @@
 
 > **Rekonstruerad 2026-11-28** ur apparnas regler och hur arbetet gjorts i molnsessioner; originalet (`../CLAUDE.md` på datorn) fanns inte här. Apparnas `CLAUDE.md` hänvisar hit för arbetsflöde, säkerhet och artifact. Ersätt med originalet om det finns.
 
-Standard: `STANDARD.md`. Stil: `STIL.md`. Gemensamma filer: `template/`.
+Standard: `STANDARD.md`. Stil: `STIL.md`. Gemensamma filer: `template/`. Läget och hur testerna körs i molnet: `HANDOVER.md`.
 
 ## Arbetsflöde
 - Varje app har egen `CLAUDE.md`; den gäller före den här filen. Läs bara det avsnitt i `docs/SPEC.md` som berörs.
