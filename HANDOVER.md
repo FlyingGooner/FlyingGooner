@@ -18,6 +18,7 @@ Verktygen ligger i `template/tools/` (kopiera inte in dem i apparna):
 - **UI:** `node ../FlyingGooner/template/tools/ui-run.js $PWD <app>.html` från appens mapp. Låser datum från `today.txt`, läser `ui-seed.json`, laddar `ui-before.js`, stoppar nätet.
 - **Enhet, moduler** (Task, Budget, Shopping): `node tools/node-unit.mjs tools/tests/unit.test.js`.
 - **Enhet, vanliga skript:** Football `node ../FlyingGooner/template/tools/unit-plain.mjs tools/tests/unit.test.js version.js store.js`; Fitness `node ../FlyingGooner/template/tools/unit-plain.mjs tools/tests/unit.test.js data/foods.js`.
+- **Säkerhet:** `node ../FlyingGooner/template/tools/security.mjs` från appens mapp (fel = exit 1). Granskning av alla appar: agenten `sakerhet`.
 - Skärmbilder: Playwright (`require('playwright')`), 400–412 px, ljust och mörkt. Titta på dem innan något kallas klart.
 
 ## Gjort i den här sessionen (kort)

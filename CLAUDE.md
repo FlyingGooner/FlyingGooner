@@ -15,7 +15,7 @@ Standard: `STANDARD.md`. Stil: `STIL.md`. Gemensamma filer: `template/`. Läget 
 
 ## Säkerhet
 - Inga nätverksanrop, nycklar eller externa resurser utan ett undantag i `STANDARD.md` (U-nummer) som användaren godkänt.
-- Ändringar som rör lagring, import/export, kryptering, CSP eller nätet granskas mot `STANDARD.md` punkt 2 och 5 innan commit.
+- Ändringar som rör lagring, import/export, kryptering, CSP eller nätet granskas mot `STANDARD.md` punkt 2 och 5 innan commit: kör `template/tools/security.mjs` och agenten `sakerhet`.
 - Användarens data, e-post och namn skickas aldrig till externa tjänster.
 
 ## Artifact

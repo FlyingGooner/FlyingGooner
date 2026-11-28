@@ -44,6 +44,7 @@ Varje app med användardata har kortet **Data** under Inställningar:
 
 ## 7. Tester
 - `tools/tests/unit.test.js` (store-logik, T-API, körs i Node med `tools/node-unit.mjs`), `*.node.mjs` (`node:test`), `ui.test.js` (klickar i testbygget; `today.txt` låser datum, `ui-seed.json` = testdata). Testerna använder aldrig nätet.
+- **Säkerhet:** `node ../FlyingGooner/template/tools/security.mjs` i appens mapp (CSP, farliga mönster, externa adresser, hemligheter, service worker, gemensamma filer, GitHub Actions). Inga fel får finnas före commit. Fördjupad granskning: agenten `sakerhet` (`.claude/agents/sakerhet.md`).
 
 ## 8. Alla mina appar
 Inställningar → Allmänt → **Alla mina appar**: varje app med Öppna, Ladda ner (HTML) och GitHub; den egna markerad "(den här)". Lägg till nya appar i alla appar samtidigt.
