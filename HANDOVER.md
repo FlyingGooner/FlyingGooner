@@ -5,11 +5,12 @@ Till nästa session. Regler: `CLAUDE.md` och `STANDARD.md` här, och varje apps 
 ## Läge
 | App | Repo | Gren | Version |
 |---|---|---|---|
-| Fitness buddy | `simple-nutrition` | master | 0.14.236 |
-| Task buddy | `Stress-control` | main | 0.2.166 |
-| Budget buddy | `budget-buddy` | main | 0.12.212 |
-| Football, not soccer | `Football-not-soccer` | main | 0.16.116 |
-| Shopping buddy (ny) | `Shopping-buddy` | main | 0.1.24 |
+| Fitness buddy | `simple-nutrition` | master | 0.14.237 |
+| Task buddy | `Stress-control` | main | 0.2.167 |
+| Budget buddy | `budget-buddy` | main | 0.12.213 |
+| Football, not soccer | `Football-not-soccer` | main | 0.16.117 |
+| Shopping buddy | `Shopping-buddy` | main | 0.1.25 |
+| Power buddy (ny) | `Power-buddy` | main | 0.1.2 |
 
 Alla tester gröna 2026-11-28 (enhet, `*.node.mjs`, UI i Chromium).
 
@@ -28,7 +29,17 @@ Verktygen ligger i `template/tools/` (kopiera inte in dem i apparna):
 - **Granskning av alla appar** med buggfixar (se respektive git-logg 2026-11-27/28).
 - `STANDARD.md`, `CLAUDE.md` och `template/` här är **rekonstruerade** ur apparna – originalen fanns bara på datorn. Ersätt om de finns kvar.
 
+## Power buddy (2026-11-28)
+- Elpris (kvartspris SE1–SE4) och "Planen": t.ex. "Disk fr. 22:45" = tidigaste start inom programmets startfönster vars snitt ligger högst 10 % (min 2 öre) över bästa. Frågar bara elområde (postnummer eller val) och debitering (kvart förval / timme / månadssnitt / fast). Idag = dashboard med alla zoner. Gul `#ffcc00`. Spec: `Power-buddy/docs/SPEC.md`.
+- Priser hämtas av GitHub Action `prices.yml` (elprisetjustnu.se, ca 13:35/15:05/18:05) till `data/prices/SEx/ÅÅÅÅ-MM.json`; appen läser bara egen sida (`connect-src 'self'`, inget U-undantag). Provkörd 2026-11-28: OK. Default workflow-behörighet i repot = läs; filen anger själv `contents: write`. Källhänvisning till Elpriset just nu.se.
+- Byggd i separat session (bara power-buddy som källa – fick inte skrivrätt till andra repon; flerrepo-steg görs därför från en session som startats med alla repon).
+
+## Säkerhet (2026-11-28)
+- `template/tools/security.mjs` och agenten `.claude/agents/sakerhet.md`. Första granskningen: inga höga fynd.
+- Kvar från granskningen: Budget buddy `rates.yml` `git pull --rebase -X theirs` kan skriva över samtidiga ändringar (Medel); `actions/checkout@v4` olåst i Task/Fitness/Budget/Football (Låg); Budget `update-rates.mjs` saknar storleksgräns/`redirect: 'error'` (Låg); flyinggooner.github.io skriv ut `connect-src 'none'` (Låg). Ej granskat fullt: Radera all data i Task/Fitness/Budget/Shopping, `validate()` i sin helhet, krypton i `backup.js`, git-historik.
+
 ## Öppet
 - `presentation`/"Så ser de ut" på flyinggooner.github.io har bara skärmbilder av fyra appar; README där säger "One template, four apps". Lägg till Shopping buddy när den har skärmbilder och `docs/presentation.html`.
 - Fitness buddy, Task buddy, Budget buddy och Football har fortfarande `single-html.yml` (bot-commits). Stäng av som i Shopping buddy om varningarna om overifierade commits stör.
-- Användaren har en ny app-idé att utforska.
+- Power buddy: historik från 2022 ej hämtad (kör `prices.yml` för hand med backfill). Inte provad på riktig telefon.
+- Startsidans första bild säger "Fem appar" med fyra ikoner (Shopping och Power saknas).
