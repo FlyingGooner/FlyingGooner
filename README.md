@@ -8,6 +8,7 @@ I build small, simple mobile apps (PWAs) for my own everyday life. No login, no 
 
 | App | What it does |
 |---|---|
+| [Shopping buddy](https://flyinggooner.github.io/Shopping-buddy/) | Shopping lists per shop or occasion, in the order you walk. |
 | [Task buddy](https://flyinggooner.github.io/Stress-control/) | Write down what is spinning in your head – and let it go. |
 | [Fitness buddy](https://flyinggooner.github.io/simple-nutrition/) | Habits first – calories as support when you want. |
 | [Budget buddy](https://flyinggooner.github.io/budget-buddy/) | Plan your finances month by month, in your own currency. |
